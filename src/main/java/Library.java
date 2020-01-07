@@ -10,4 +10,7 @@ public class Library {
     }
 
 
+    public int countBooksInLibrary() {
+        return bookCollection.size();
+    }
 }
