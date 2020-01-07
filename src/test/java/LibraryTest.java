@@ -24,6 +24,17 @@ public class LibraryTest {
         library.addBookToLibrary(book);
         assertEquals(1,library.countBooksInLibrary());
     }
-    
+
+    @Test
+    public void canNotAddBookToLibraryIfItsFull() {
+        library.addBookToLibrary(book);
+        library.addBookToLibrary(book);
+        library.addBookToLibrary(book);
+        library.addBookToLibrary(book);
+        library.addBookToLibrary(book);
+        library.addBookToLibrary(book);
+        assertEquals(5,library.countBooksInLibrary());
+    }
+
 
 }
