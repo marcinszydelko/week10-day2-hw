@@ -19,4 +19,9 @@ public class Library {
             this.bookCollection.add(book);
         }
     }
+
+    public void rentOutBook(Borrower borrower, Book book) {
+        borrower.addBookToCollection(book);
+        this.bookCollection.remove(book);
+    }
 }
