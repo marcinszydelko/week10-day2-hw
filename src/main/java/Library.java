@@ -22,6 +22,6 @@ public class Library {
 
     public void rentOutBook(Borrower borrower, Book book) {
         borrower.addBookToCollection(book);
-        this.bookCollection.remove(book);
+        this.bookCollection.remove(this.bookCollection.indexOf(book));
     }
 }
